@@ -13,6 +13,6 @@ Usage: x6s-reboot [options...] [host]
 ```
 
 ## Legal Notice
-Copyrights Raffaele Perrella.
-Distributed under GNU General Public License v3.0 License.
-This script has no official affiliation with Netgear.
+Copyrights Raffaele Perrella.  
+Distributed under GNU General Public License v3.0 License.  
+This script has no official affiliation with Netgear.  
