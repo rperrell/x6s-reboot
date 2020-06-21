@@ -59,16 +59,19 @@ HOST=$1
 
 if [ -z "$HOST" ]; then
   read -p "host: " HOST
+  echo
 fi
 
 if [ -z "$EMAIL" ]; then
   read -p "username: "
   EMAIL=$(echo -n "$REPLY" | base64 | tr -d '=')
+  echo
 fi
 
 if [ -z "$PASSWORD" ]; then
   read -sp "password: "
   PASSWORD=$(echo -n "$REPLY" | base64 | tr -d '=')
+  echo
 fi
 
 curl $CURL_OPT -s -d 'submit_flag=login' -d "email=$EMAIL" -d "password=$PASSWORD" -d 'hid_remember_me=off' -X POST "http://$HOST/register.cgi?/status.htm" >/dev/null
