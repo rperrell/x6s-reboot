@@ -7,9 +7,9 @@ Tested on EX8000 model.
 ```sh
 Usage: x6s-reboot [options...] [host]
     -h            Print this help text
-    -p <password> Set the username
+    -p <password> Set the password
     -t            Test connection
-    -u <username> Set the password
+    -u <username> Set the username
 ```
 
 ## Legal Notice
