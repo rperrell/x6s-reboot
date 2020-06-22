@@ -22,9 +22,9 @@ while getopts ":hp:tu:" opt; do
     h )
       usage
       echo "    -h            Print this help text"
-      echo "    -p <password> Set the username"
+      echo "    -p <password> Set the password"
       echo "    -t            Test connection"
-      echo "    -u <username> Set the password"
+      echo "    -u <username> Set the username"
       exit 0
       ;;
     p )
