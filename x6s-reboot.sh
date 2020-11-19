@@ -84,4 +84,4 @@ TIMESTAMP=$(curl $CURL_OPT -s http://$HOST/backUpSettings.htm | grep timestamp= 
 
 curl $CURL_OPT -s -d 'submit_flag=reboot'  "http://$HOST/admin.cgi?/status.htm%20timestamp=$TIMESTAMP" >/dev/null
 
-echo Rebooting
+echo Rebooting $HOST
